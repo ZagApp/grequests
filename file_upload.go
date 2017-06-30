@@ -18,6 +18,10 @@ type FileUpload struct {
 
 	// FieldName is form field name
 	FieldName string
+
+	// FileMime represents which mimetype shall be send along with the file.
+	// Defaults to application/octet-stream
+	FileMime string
 }
 
 // FileUploadFromDisk allows you to create a FileUpload struct slice by just specifying a location on the disk
